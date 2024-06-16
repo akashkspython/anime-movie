@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-image: url('{% static 'img/img_7.png' %}'); background-size: cover; background-position: center; color: #fff; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden;">
+
+    <form method="post" style="background-color: rgba(0, 0, 0, 0.7); padding: 40px; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); width: 300px;">
+        {% csrf_token %}
+        <h1 style="text-align: center; margin-bottom: 20px;">Login</h1>
+        <input type="text" name="username" placeholder="Username" required style="width: 94%; padding: 10px; margin-bottom: 10px; border: none; background-color: rgba(255, 255, 255, 0.3); border-radius: 5px; color: #fff; outline: none;">
+        <br>
+        <input type="password" name="password" placeholder="Password" required style="width: 94%; padding: 10px; margin-bottom: 10px; border: none; background-color: rgba(255, 255, 255, 0.3); border-radius: 5px; color: #fff; outline: none;">
+        <br>
+        <button type="submit" style="width: 100%; padding: 10px; background-color: #0095f6; border: none; border-radius: 5px; color: #fff; cursor: pointer; outline: none; transition: background-color 0.3s ease;">Login</button>
+        <a href="{% url 'register' %}" style="color: white; display: block; text-align: center; margin-top: 10px;">
+            <span>You can register</span>
+        </a>
+    </form>
+<div id="django-messages" style="display: none;">
+    {% for message in messages %}
+        <div class="popup-message alert alert-{{ message.tags }}" style="position: fixed; top: 30px; right: 20px; background-color: #007bff; color: white; padding: 15px; border-radius: 10px; z-index: 999;">
+            {{ message }}
+        </div>
+    {% endfor %}
+</div>
+
+<!-- Add a container for the pop-up message -->
+<div id="popup-message" style="display: none;"></div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var messages = document.querySelectorAll('#django-messages .popup-message');
+        var popupMessageContainer = document.getElementById('popup-message');
+
+        if (messages.length > 0) {
+            messages.forEach(function(message) {
+                popupMessageContainer.className = 'popup-message ' + message.classList[1];
+                popupMessageContainer.innerHTML = message.innerHTML;
+                popupMessageContainer.style.display = 'block';
+
+                setTimeout(function() {
+                    popupMessageContainer.style.display = 'none';
+                }, 3000); // 3 seconds
+            });
+        }
+    });
+</script>
+
+
+</body>
+</html>

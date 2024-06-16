@@ -1,0 +1,603 @@
+<!doctype html>
+<html class="no-js" lang="en">
+{% load static %}
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <!-- title of site -->
+        <title>Furniture</title>
+
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+        <!--linear icon css-->
+		<link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+
+		<!--animate.css-->
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="{% static 'css/carousel.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="{% static 'css/bootsnav.css' %}" >
+
+        <!--style2.css-->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <!--responsive.css-->
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+	<style>
+        .feature-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .single-feature {
+            flex: 1 1 25%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .single-feature img {
+            width: 100%;
+            height: auto;
+            max-height: 300px; /* Adjust the max-height as needed */
+            object-fit: cover;
+        }
+
+		.curved-button {
+            border: none;
+            border-radius: 25px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+        }
+
+        .curved-button:hover {
+            background-color: #0056b3;
+        }
+
+        .curved-button h2 {
+            margin: 0;
+        }
+
+        .curved-button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .curved-button a:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .center-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+
+		.pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .step-links {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .step-links a, .step-links .current {
+            padding: 5px 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .step-links a:hover {
+            background-color: #ddd;
+        }
+
+
+
+
+
+    </style>
+
+
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+
+
+		<!--welcome-hero start -->
+		<header id="home" class="welcome-hero">
+
+			<div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+				<!--/.carousel-indicator -->
+				 <ol class="carousel-indicators">
+					<li data-target="#header-carousel" data-slide-to="0" class="active"><span class="small-circle"></span></li>
+					<li data-target="#header-carousel" data-slide-to="1"><span class="small-circle"></span></li>
+					<li data-target="#header-carousel" data-slide-to="2"><span class="small-circle"></span></li>
+				</ol><!-- /ol-->
+				<!--/.carousel-indicator -->
+
+				<!--/.carousel-inner -->
+				<div class="carousel-inner" role="listbox">
+					<!-- .item -->
+					<div class="item active">
+						<div class="single-slide-item slide1">
+							<div class="container">
+								<div class="welcome-hero-content">
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-txt">
+													<h4>malayalam Movie collection</h4>
+													<h2>Varshagallkku Shesham</h2>
+													<p>
+														Malayalam cinema is the segment of Indian cinema dedicated to the production of motion pictures in the Malayalam language, which is widely spoken in the state of Kerala, India.[3] In 1982, Elippathayam won the Sutherland Trophy at the London Film Festival, and Most Original Imaginative Film of 1982 by the British Film Institute. The film Marana Simhasanam has won the prestigious Caméra d'Or at the 1999 Cannes Film Festival.
+													</p>
+
+													<button class="btn-cart welcome-add-cart" onclick="window.location.href='#feature'">
+														<span class="lnr lnr-plus-circle"></span>
+														<span>Watch</span>
+													</button>
+													<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#'">
+														more info
+													</button>
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+										<div class="col-sm-5">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-img">
+													<img src="{% static 'img/banner1.png' %}" alt="slider image" >
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+								</div><!--/.welcome-hero-content-->
+							</div><!-- /.container-->
+						</div><!-- /.single-slide-item-->
+
+					</div><!-- /.item .active-->
+
+					<div class="item">
+						<div class="single-slide-item slide2">
+							<div class="container">
+								<div class="welcome-hero-content">
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-txt">
+													<h4>English Movie collection</h4>
+													<h2>Gravity</h2>
+													<p>
+														A movie or film is a type of visual art that uses images and sounds to tell stories or teach people something. Most people watch movies to entertain themselves or to have fun. Movies can vary significantly in emotional tone both overall as a specific genre type but also within a single work. Some of the most typical approaches are to make people laugh (comedy), make them cry (tragedy or drama), or make them feel afraid (horror).
+													</p>
+
+													<button class="btn-cart welcome-add-cart" onclick="window.location.href='#feature'">
+														<span class="lnr lnr-plus-circle"></span>
+														 <span>Watch</span>
+													</button>
+													<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#'">
+														more info
+													</button>
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+										<div class="col-sm-5">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-img">
+													<img src="{% static 'img/banner2.png' %}" alt="slider image">
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+								</div><!--/.welcome-hero-content-->
+							</div><!-- /.container-->
+						</div><!-- /.single-slide-item-->
+
+					</div><!-- /.item .active-->
+
+					<div class="item">
+						<div class="single-slide-item slide3">
+							<div class="container">
+								<div class="welcome-hero-content">
+									<div class="row">
+										<div class="col-sm-7">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-txt">
+													<h4>Hindi Movie collection</h4>
+													<h2>Padmaavai</h2>
+													<p> 
+														Hindi cinema, popularly known as Bollywood and formerly as Bombay cinema,[3] refers to the film industry based in Mumbai, engaged in production of motion pictures in Hindi language. The popular term Bollywood is a portmanteau of "Bombay" (former name of Mumbai) and "Hollywood". The industry is a part of the larger Indian cinema, which also includes South Indian cinema and other smaller film industries.[4][5][6]
+													</p>
+
+													<button class="btn-cart welcome-add-cart" onclick="window.location.href='#'">
+														<span class="lnr lnr-plus-circle"></span>
+														<span>Watch</span>
+													</button>
+													<button class="btn-cart welcome-add-cart welcome-more-info" onclick="window.location.href='#feature'">
+														more info
+													</button>
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+										<div class="col-sm-5">
+											<div class="single-welcome-hero">
+												<div class="welcome-hero-img">
+													<img src="{% static 'img/banner3.png' %}" alt="slider image">
+												</div><!--/.welcome-hero-txt-->
+											</div><!--/.single-welcome-hero-->
+										</div><!--/.col-->
+									</div><!--/.row-->
+								</div><!--/.welcome-hero-content-->
+							</div><!-- /.container-->
+						</div><!-- /.single-slide-item-->
+
+					</div><!-- /.item .active-->
+				</div><!-- /.carousel-inner-->
+
+			</div><!--/#header-carousel-->
+
+			<!-- top-area Start -->
+			<div class="top-area">
+				<div class="header-area">
+					<!-- Start Navigation -->
+				   <nav class="navbar navbar-default bootsnav navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+    <!-- Start Top Search -->
+<nav class="navbar navbar-default bootsnav navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+    <!-- Start Top Search -->
+<div class="top-search">
+    <div class="container">
+        <form action="{% url 'search_app:SearchResult' %}" method="get">
+            <div class="input-group">
+                <span class="input-group-addon"><i class='bx bx-search'></i></span>
+                <input type="text" name="q" class="form-control" style="color: white;" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+                <button type="submit" style="display:none;"></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <!-- End Top Search -->
+
+   <div class="container">
+    <!-- Start Attribute Navigation -->
+       <div class="attr-nav">
+           <ul>
+               <li class="search">
+            <li class="search">
+                <a href="#"><span class="fa fa-search"></span></a>
+            </li><!--/.search-->
+            <li class="nav-setting">
+                <a href="{% url 'cart:cart_detail' %}"><span class="fa fa-heart"></span></a>
+            </li><!--/.search-->
+            <li class="dropdown">
+                <a href="{% url 'user:account' %}" class="dropdown-toggle" >
+                    <span class="fa fa-user"></span>
+                    <span class="badge badge-bg-1"></span>
+                </a>
+            </li><!--/.dropdown-->
+        </ul>
+    </div><!--/.attr-nav-->
+    <!-- End Attribute Navigation -->
+
+    <!-- Start Header Navigation -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+            <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand" href="#">Anime<span>Movie</span>.</a>
+    </div><!--/.navbar-header-->
+
+    <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+        <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
+            <li class="scroll active"><a href="#home">Home</a></li>
+            <li class="scroll"><a href="#feature">Movie</a></li>
+            <li class="scroll"><a href="#newsletter">Contact</a></li>
+        </ul>
+    </div><!--/.navbar-collapse -->
+</div><!--/.container-->
+
+
+
+
+			</div><!-- /.top-area-->
+		</header><!--/.welcome-hero-->
+
+
+<!-- movies/templates/movies/movie_list.html -->
+<section id="feature" class="feature">
+    <form method="post" action="#">{% csrf_token %}</form>
+    <div class="container">
+        <div class="section-header">
+            <h2>Movie</h2>
+        </div><!--/.section-header-->
+
+        <div class="feature-content">
+    <div class="row">
+        {% for movie in movies %}
+        <div class="col-md-3 col-sm-6">
+            <div class="single-feature">
+                <a href="{% url 'movie_detail' movie.id %}">
+                    <img src="{{ movie.poster.url }}" alt="Feature Image" class="img-responsive feature-image" style="width: 100%; height: 300px; object-fit: cover;">
+                </a>
+                <div class="single-feature-txt text-center">
+                    <p>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span class="special-feature-icon"><i class="fa fa-star"></i></span>
+                        <span class="feature-review">(45 Reviews)</span>
+                    </p>
+                    <h3><a href="{% url 'movie_detail' movie.id %}">{{ movie.title }}</a></h3>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        {% if movies.has_previous %}
+                        <li class="page-item">
+                            <a  class="page-link" href="?page={{ movies.previous_page_number }}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        {% endif %}
+
+                        {% for num in movies.paginator.page_range %}
+                        <li class="page-item {% if movies.number == num %}active{% endif %}">
+                            <a class="page-link" href="?page={{ num }}">{{ num }}</a>
+                        </li>
+                        {% endfor %}
+
+                        {% if movies.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ movies.next_page_number }}" style="color: orange;" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+	<!--/.container-->
+    </section><!--/.feature-->
+	<!--blog start -->
+		<section id="blog" class="blog">
+			<div class="container">
+				<div class="section-header">
+				<center>	 <h2 href="#">Add <span>Movie</span>.</h2></center>
+				</div><!--/.section-header-->
+				<div class="blog-content">
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="single-blog">
+								<div class="single-blog-img">
+
+									<div class="single-blog-img-overlay"></div>
+								</div>
+								<div class="single-blog-txt">
+
+								</div>
+							</div>
+
+						</div>
+						<div class="col-sm-4">
+    <div class="single-blog">
+        <div class="single-blog-img">
+            <img src="{% static 'img/img_5.png' %}" alt="blog image" style="width:350px; height:270px;">
+            <div class="single-blog-img-overlay"></div>
+        </div>
+        <div class="single-blog-txt">
+            <h3>
+                <a href="#">You have to add movie through the anime movie</a>
+            </h3>
+            <div class="center-button">
+                <a href="{% url 'add_movie' %}">
+                    <button class="curved-button">
+                        <h2>Add Movie</h2>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+						<div class="col-sm-4">
+							<div class="single-blog">
+								<div class="single-blog-img">
+
+									<div class="single-blog-img-overlay"></div>
+								</div>
+								<div class="single-blog-txt">
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!--/.container-->
+
+		</section><!--/.blog-->
+		<!--newsletter strat -->
+
+			<section id="newsletter"  class="newsletter">
+			<div class="container">
+				<div class="hm-footer-details">
+					<div class="row">
+						<div class=" col-md-3 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>information</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-menu">
+									<ul>
+										<li><a href="#">about us</a></li><!--/li-->
+										<li><a href="#">contact us</a></li><!--/li-->
+										<li><a href="#">news</a></li><!--/li-->
+										<li><a href="#">store</a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-menu-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+						<div class=" col-md-3 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>Movie Type</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-menu">
+									<ul>
+										<li><a href="#"></a></li><!--/li-->
+										<li><a href="#">English</a></li><!--/li-->
+										<li><a href="#">Malayalam</a></li><!--/li-->
+										<li><a href="#">Hindi</a></li><!--/li-->
+										<li><a href="#">Tamil</a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-menu-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+						<div class=" col-md-3 col-sm-6 col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>my accounts</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-menu">
+									<ul>
+										<li><a href="#">my account</a></li><!--/li-->
+										<li><a href="#">wishlist</a></li><!--/li-->
+										<li><a href="#">Community</a></li><!--/li-->
+										<li><a href="#">order history</a></li><!--/li-->
+										<li><a href="#">my cart</a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-menu-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+						<div class=" col-md-3 col-sm-6  col-xs-12">
+							<div class="hm-footer-widget">
+								<div class="hm-foot-title">
+									<h4>newsletter</h4>
+								</div><!--/.hm-foot-title-->
+								<div class="hm-foot-para">
+									<p>
+										Subscribe  to get latest news,update and information.
+									</p>
+								</div><!--/.hm-foot-para-->
+								<div class="hm-foot-email">
+									<div class="foot-email-box">
+										<input type="text" class="form-control" placeholder="Enter Email Here....">
+									</div><!--/.foot-email-box-->
+									<div class="foot-email-subscribe">
+										<span><i class="fa fa-location-arrow"></i></span>
+									</div><!--/.foot-email-icon-->
+								</div><!--/.hm-foot-email-->
+							</div><!--/.hm-footer-widget-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.hm-footer-details-->
+
+			</div><!--/.container-->
+
+		</section><!--/newsletter-->
+		<!--newsletter end -->
+
+		<!--footer start-->
+		<footer id="footer"  class="footer">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<div class="footer-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-pinterest"></i></a>
+						<a href="#"><i class="fa fa-behance"></i></a>
+					</div>
+					<p>
+						&copy;Anime<a href="#"></a>
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-To">
+    <div class="return-to-top">
+        <i class="fa fa-angle-up" id="scroll-top" data-toggle="tooltip" data-placement="top" title="Back to Top" aria-hidden="true"></i>
+    </div>
+</div>
+			</div><!--/.scroll-Top-->
+
+        </footer><!--/.footer-->
+		<!--footer end-->
+
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="{% static 'js/jquery.js' %}"></script>
+
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+		<!--bootstrap.min.js-->
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+		<!-- bootsnav js -->
+		<script src="{% static 'js/bootsnav.js' %}"></script>
+
+		<!--owl.carousel.js-->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+        <!--Custom JS-->
+        <script src=" {% static 'js/custom.js' %}"></script>
+
+    </body>
+</html>
+
+
